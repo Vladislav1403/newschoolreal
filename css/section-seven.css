@@ -1,0 +1,110 @@
+.section-seven {
+  margin-bottom: 168px;
+}
+
+.section-seven__instructors_location {
+  margin-top: 10px;
+  margin-bottom: 53px;
+  background: #e5e5e5;
+}
+
+.section-seven__instructors {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-seven__instructors-description p {
+  width: 405px;
+  padding-bottom: 31px;
+}
+
+.section-seven__instructors_choose-instructor {
+  margin-top: 35px;
+  display: flex;
+}
+
+.arrow-left {
+  width: 51px;
+  height: 51px;
+  border: 1px solid rgba(46, 42, 68, 0.12);
+  border-radius: 16.32px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  margin-left: 14px;
+  margin-right: 4px;
+  background: url(../img/sectionseven/arrowleft.png) 15px 15px no-repeat;
+}
+
+.arrow-right {
+  width: 51px;
+  height: 51px;
+  border: 1px solid rgba(46, 42, 68, 0.12);
+  border-radius: 16.32px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  background: url(../img/sectionseven/arrowright.png) 15px 15px no-repeat;
+}
+
+.section-seven__instructor-one {
+  width: 274px;
+  height: 460px;
+  background: #ffffff;
+  border-radius: 28px;
+  margin-right: -350px;
+}
+
+.section-seven__foto-instructor-one {
+  width: 222px;
+  height: 192px;
+  background: url(../img/sectionseven/ovchinnikov.png) 0 0 no-repeat;
+  margin-top: 30px;
+  margin-left: 28px;
+}
+
+.section-seven__instructor-name {
+  width: 185px;
+  height: 44px;
+  margin: 21px 0 8px 33px;
+}
+
+.section-seven__instructor-experience {
+  width: 158px;
+  height: 38px;
+  margin-left: 33px;
+  margin-bottom: 55px;
+}
+
+.section-seven__instructor-experience p {
+  color: rgba(140, 140, 140, 0.56);
+}
+
+.section-seven__instructor-rating {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 33px;
+}
+
+.section-seven__instructor-ratingscore {
+  position: relative;
+  top: 23px;
+  left: -55px;
+  width: 53px;
+  height: 25px;
+  background: url(../img/sectionseven/star.png) 6px 4px no-repeat;
+  padding-left: 35px;
+}
+
+.section-seven__instructor-second {
+  width: 274px;
+  height: 460px;
+  background: #ffffff;
+  border-radius: 28px;
+}
+
+.section-seven__foto-instructor-second {
+  width: 222px;
+  height: 192px;
+  background: url(../img/sectionseven/permyakov.png) -10px -28px no-repeat;
+  margin-top: 30px;
+  margin-left: 28px;
+}
+
+/*# sourceMappingURL=section-seven.css.map */

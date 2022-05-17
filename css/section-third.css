@@ -1,0 +1,50 @@
+.section-third__get-discount {
+  width: 1440px;
+  min-width: 1340px;
+  height: 385px;
+  background: #ffffff;
+  border-radius: 30px;
+  margin-bottom: 130px;
+}
+
+.section-third__get-discount_advertising {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.section-third__get-discount_description {
+  margin: 0 82px 57px 80px;
+}
+
+.smallbutton-discount1000 {
+  background-color: #ff931e;
+  font-weight: 700;
+  line-height: 148%;
+  font-size: 16px;
+  color: white;
+  width: 139px;
+  height: 28px;
+  border-radius: 7px;
+  margin: 70px 260px 12px 0;
+}
+
+.section-third__get-discount_description-text {
+  width: 395px;
+  height: 117px;
+}
+
+.section-third__get-discount_carfoto {
+  position: relative;
+  top: -50px;
+  width: 655px;
+  height: 270px;
+  background: url(../img/sectionthird/vector454.png) 333px 260px no-repeat, url(../img/sectionthird/maskgroup.png) 60px 0 no-repeat, url(../img/sectionthird/group.png) -130px -35px no-repeat, url(../img/sectionthird/groupone.png) -25px -120px no-repeat;
+}
+
+.section-third__get-discount_input-data {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 62px;
+}
+
+/*# sourceMappingURL=section-third.css.map */

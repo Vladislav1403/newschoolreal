@@ -1,0 +1,121 @@
+.section-six {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 93px;
+}
+
+.section-six__cost-of-education {
+  width: 373px;
+}
+
+.section-six__cost-of-education_title {
+  margin-bottom: 9px;
+}
+
+.section-six__cost-of-education_location {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #181818;
+  background: #e5e5e5 url(../img/sectionsix/costofeducation/polygon.svg) 88px 3px no-repeat;
+  margin-bottom: 45px;
+}
+
+.section-six__cost-of-education-online {
+  width: 280px;
+  height: 692px;
+  background: #ffffff;
+  border-radius: 19px;
+  margin-right: -350px;
+}
+
+.section-six__cost-of-education-online_name {
+  margin-top: 38px;
+  margin-left: 39px;
+  margin-bottom: 14px;
+  height: 24px;
+  padding-top: 2px;
+  background: url(../img/sectionsix/costofeducation/online/question.svg) 73px 4px no-repeat,
+  url(../img/sectionsix/costofeducation/online/ellipse32.png) 65px 0 no-repeat;
+}
+
+.section-six__cost-of-education-price-reduced {
+  padding-left: 148px;
+  background: url(../img/sectionsix/costofeducation/online/vector14.png) 147px 5px no-repeat;
+}
+
+.section-six__cost-of-education-new-price {
+  margin-left: 39px;
+  margin-bottom: 5px;
+}
+
+.section-six__cost-of-education-online_promotion {
+  background-color: #4f8ffd;
+  width: 169px;
+  height: 25px;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff;
+  padding: 5px 10px;
+  margin-left: 37px;
+  margin-bottom: 17px;
+}
+
+.section-six__cost-of-education-online_vector {
+  width: 174px;
+  border: 1px solid #e4e4e4;
+  margin-left: 37px;
+  margin-bottom: 15px;
+}
+
+.section-six__cost-of-education-online_firstpay {
+  margin-left: 39px;
+  margin-bottom: 32px;
+}
+
+.section-six__cost-of-education-online_description {
+  width: 180px;
+  height: 345px;
+  margin-left: 35px;
+  margin-bottom: 12px;
+}
+
+.section-six__cost-of-education-online_list li {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 123.19%;
+  color: #2d2d2d;
+  padding-bottom: 15px;
+  background: url(../img/sectionsix/costofeducation/online/ellipse33.png) 0 3px no-repeat;
+  padding-left: 15px;
+}
+
+.section-six__cost-of-education_button {
+  margin-left: 36px;
+  margin-bottom: 42px;
+}
+
+.section-six__cost-of-education-onlineplus {
+  width: 280px;
+  height: 692px;
+  background: #ffffff;
+  border-radius: 19px;
+}
+
+.section-six__cost-of-education-online_promotion-yellow {
+  background-color: #FF941F;
+  width: 169px;
+  height: 25px;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff;
+  padding: 5px 10px;
+  margin-left: 37px;
+  margin-bottom: 17px;
+}

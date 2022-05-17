@@ -1,0 +1,128 @@
+.section-fourth__title {
+  width: 750px;
+  height: 129px;
+}
+
+.section-fourth__titletwo {
+  margin-top: 16px;
+  margin-bottom: 130px;
+}
+
+.section-fourth__steps-to-register {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.section-fourth__step-one_barcode {
+  width: 150px;
+  height: 150px;
+  background: url(../img/sectionfourth/columnone/download.svg) 14px 88px no-repeat, url(../img/sectionfourth/columnone/rectangle2649.png) 8px 84px no-repeat, url(../img/sectionfourth/columnone/group.svg) 110px 5px no-repeat, url(../img/sectionfourth/columnone/rectangle52.png) 83px -10px no-repeat, url(../img/sectionfourth/columnone/screen.svg) center no-repeat, url(../img/sectionfourth/columnone/rectangle51.png) center no-repeat;
+}
+
+.section-fourth__install-applications {
+  width: 300px;
+  height: 48px;
+  margin-top: 31px;
+  margin-bottom: 15px;
+}
+
+.section-fourth__step-one_appstore {
+  width: 100px;
+  height: 34px;
+  border: 1px solid gray;
+  border-radius: 9.1117px;
+  background: url(../img/sectionfourth/columnone/appstore.png) center no-repeat;
+}
+
+.section-fourth__step-one_googleplay {
+  width: 100px;
+  height: 34px;
+  border: 1px solid gray;
+  border-radius: 9.1117px;
+  background: url(../img/sectionfourth/columnone/googleplay.png) center no-repeat;
+}
+
+.section-fourth__step-two_aplication-form {
+  width: 170px;
+  height: 150px;
+  background: url(../img/sectionfourth/columntwo/vector474.svg) 35px 11px no-repeat, url(../img/sectionfourth/columntwo/rectangle2659.png) 28px 5px no-repeat, url(../img/sectionfourth/columntwo/mappin.svg) 116px 100px no-repeat, url(../img/sectionfourth/columntwo/rectangle2653.png) 84px 78px no-repeat, url(../img/sectionfourth/columntwo/rectangle2652.png) center no-repeat;
+  border-radius: 15px;
+  transform: rotate(-9.65deg);
+}
+
+.section-fourth__step-two_notice {
+  width: 200px;
+  height: 120px;
+  margin-top: 31px;
+}
+
+.section-fourth__step-three_first-payment {
+  width: 170px;
+  height: 150px;
+  background: url(../img/sectionfourth/columnthird/group33540.svg) 51px 103px no-repeat, url(../img/sectionfourth/columnthird/tllipse97.png) 45px 97px no-repeat, url(../img/sectionfourth/columnthird/wallet.svg) 94px 17px no-repeat, url(../img/sectionfourth/columnthird/rectangle2650.png) center no-repeat, url(../img/sectionfourth/columnthird/rectangle2651.png) 65px 0 no-repeat;
+}
+
+.section-fourth__step-three_costs {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27.9371px;
+  line-height: 33px;
+  color: #ffffff;
+  transform: rotate(-5.62deg);
+  position: relative;
+  left: 25px;
+  top: 56px;
+}
+
+.section-fourth__step-three_notice {
+  margin-top: 31px;
+  width: 187px;
+  height: 48px;
+}
+
+@keyframes steps {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.section-fourth__step-one {
+  opacity: 0;
+  animation: steps 2s linear 1 1.5s forwards;
+}
+
+.section-fourth__step-two {
+  opacity: 0;
+  animation: steps 2s linear 1 3s forwards;
+}
+
+.section-fourth__step-three {
+  opacity: 0;
+  animation: steps 2s linear 1 4.5s forwards;
+}
+
+.section-fourth__vector {
+  width: 1100px;
+  height: 1px;
+  border: 1px solid grey;
+  margin: 0 auto;
+}
+
+.section-fourth__school-enrollment {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 100px;
+  margin-bottom: 154px;
+}
+
+.section-fourth__school-enrollment-list {
+  width: 426px;
+  background: url(../img/sectionfourth/ellipse98.png) 0 10px no-repeat;
+  padding: 0 20px 0 30px;
+  margin-bottom: 30px;
+}
+
+/*# sourceMappingURL=section-fourth.css.map */

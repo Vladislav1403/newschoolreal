@@ -1,0 +1,59 @@
+.section-nine {
+  width: 1440px;
+  height: 301px;
+  background: #4f8ffd url("../img/sectionnine/group.png") 503px 0 no-repeat;
+  border-radius: 30px;
+  margin-bottom: 154px;
+}
+
+.section-nine__write-now {
+  padding-top: 57px;
+  margin-left: 60px;
+}
+
+.section-nine__write-now_display {
+  display: flex;
+  justify-content: space-between;
+  padding: 64px 71px 60px 58px;
+  margin-bottom: 154px;
+}
+
+.section-nine__questions {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 117px;
+}
+
+.section-nine__questionslist li {
+  padding-bottom: 21px;
+}
+
+.section-nine__1 {
+  background: url(../img/sectionnine/polygon4.png) 350px 7px no-repeat;
+}
+
+.section-nine__2 {
+  background: url(../img/sectionnine/polygon5.png) 360px 7px no-repeat;
+}
+
+.section-nine__3 {
+  background: url(../img/sectionnine/polygon5.png) 295px 7px no-repeat;
+}
+
+.section-nine__4 {
+  background: url(../img/sectionnine/polygon5.png) 301px 7px no-repeat;
+}
+
+.section-nine__5 {
+  background: url(../img/sectionnine/polygon5.png) 260px 7px no-repeat;
+}
+
+.section-nine__6 {
+  background: url(../img/sectionnine/polygon5.png) 410px 7px no-repeat;
+}
+
+.section-nine__7 {
+  background: url(../img/sectionnine/polygon5.png) 235px 7px no-repeat;
+}
+
+/*# sourceMappingURL=section-nine.css.map */

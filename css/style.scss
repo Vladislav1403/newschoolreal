@@ -1,0 +1,44 @@
+@import 'nullstily.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background: #e5e5e5;
+	min-width: 1440px;
+	margin: 0 auto;
+}
+
+@import 'Fonts';
+@import 'Button';
+@import 'header';
+@import 'section-one';
+@import 'section-second';
+@import 'section-third';
+@import 'section-fourth';
+@import 'section-fifth';
+@import 'section-six';
+@import 'section-seven';
+@import 'section-eighth';
+@import 'section-nine';
+@import 'section-ten';
+@import 'footer';
+
+header {
+	min-width: 1440px;
+	margin: 0 auto;
+}
+
+main {
+	max-width: 1600px;
+	min-width: 1440px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+footer {
+	min-width: 1440px;
+	margin: 0 auto;
+}

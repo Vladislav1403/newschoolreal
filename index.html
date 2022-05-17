@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="ru,en" xmlns="http://www.w3.org/1999/html">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+			name="viewport"
+		/>
+		<meta content="ie=edge" http-equiv="X-UA-Compatible" />
+		<title>Auto school</title>
+		<link href="css/style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<header>
+			<div class="header-partone">
+				<nav class="header-partone__nav">
+					<li class="header-partone__nav_menu">Блог</li>
+					<li class="header-partone__nav_menu">Документы</li>
+					<li class="header-partone__nav_menu">FAQ</li>
+				</nav>
+				<div class="social">
+					<div>
+						<a href="#" rel="nofollow noopener" target="_blank">
+							<svg aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+								<path
+									d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"
+									fill="white"
+								></path>
+							</svg>
+						</a>
+					</div>
+					<div>
+						<a href="#" rel="nofollow noopener" target="_blank">
+							<svg
+								enable-background="new 0 0 512 512"
+								id="Layer_1"
+								version="1.1"
+								viewBox="0 0 512 512"
+								xml:space="preserve"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<g>
+									<path
+										d="M308.3,508.5c-2.5,0.1-4.1,0.3-5.7,0.3c-34.2,0-68.3-0.1-102.5,0.1c-4.8,0-6.1-1.3-6.1-6.1c0.1-79.6,0.1-159.3,0.1-238.9   c0-2.1,0-4.2,0-6.9c-18.6,0-36.7,0-55.1,0c0-28.4,0-56.3,0-85c1.9,0,3.7,0,5.4,0c15,0,30-0.1,45,0.1c3.8,0,4.8-1.1,4.8-4.8   c-0.2-22.3-0.2-44.7,0-67c0.1-15.6,2.6-30.8,9.8-44.9c10.3-19.9,26.6-32.8,47.2-40.8c16.8-6.6,34.5-9,52.3-9.3   c29-0.4,58-0.2,87-0.3c2.7,0,4.9-0.1,4.9,3.7c-0.1,27.5-0.1,55-0.1,82.5c0,0.3-0.1,0.6-0.5,1.9c-1.7,0-3.6,0-5.5,0   c-18,0-36-0.1-54,0c-10.4,0-18.8,4.2-24.1,13.3c-1.6,2.7-2.6,6.2-2.6,9.4c-0.3,17,0,34-0.2,51c0,4,1.2,5.1,5.1,5.1   c25-0.2,50-0.1,75-0.1c2,0,3.9,0,7.3,0c-3.5,28.6-6.9,56.6-10.4,84.9c-26,0-51.3,0-77.1,0C308.3,340.8,308.3,424.4,308.3,508.5z"
+										fill="white"
+									/>
+								</g>
+							</svg>
+						</a>
+					</div>
+					<div>
+						<a href="#" rel="nofollow noopener" target="_blank">
+							<svg
+								enable-background="new 0 0 512 512"
+								id="Layer_1"
+								version="1.1"
+								viewBox="0 0 512 512"
+								xml:space="preserve"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<g>
+									<path
+										d="M505,257c0,34.8-0.7,69.7,0.2,104.5c1.5,61.6-37.2,109.2-86.5,130.4c-19.8,8.5-40.6,13-62.1,13c-67.3,0.1-134.7,1-202-0.3   c-50.7-1-92.4-22.2-122.3-64c-15.7-22-23.2-47-23.2-74.1c0-71.7,0-143.3,0-215c0-58.5,28.5-99.4,79.1-126C110.2,14,134.1,9.1,159,9   c65.3,0,130.7-0.4,196,0.2c50.7,0.4,93,19.8,124.2,60.6c17.4,22.8,25.8,49,25.8,77.8C505,184,505,220.5,505,257z M46,257   c0,36.7,0,73.3,0,110c0,16.4,3.8,31.8,12.3,45.7c22.3,36.5,56,54.3,97.8,55c67.1,1,134.3,0.4,201.5,0.2c16.5,0,32.5-3.4,47.4-10.5   c40.6-19.4,63.3-50.3,63.1-96.7c-0.4-71-0.1-142-0.1-213c0-20.1-5.7-38.5-17.6-54.7c-23-31.1-54.8-46.4-92.8-46.8   c-67-0.8-134-0.3-201-0.2c-14.3,0-28.1,2.9-41.5,7.9c-36.8,13.7-71,48.4-69.4,99.5C46.9,188,46,222.5,46,257z"
+										fill="white"
+									/>
+									<path
+										d="M257.6,363c-64.5,0-116.5-51.4-116.6-115.4c-0.1-63,52.3-114.6,116.4-114.6c64.3-0.1,116.5,51.4,116.6,114.9   C374,311.3,321.9,362.9,257.6,363z M257.6,326c43.9,0,79.5-35.1,79.4-78.3c-0.1-42.8-35.7-77.8-79.4-77.8   c-43.9,0-79.7,34.9-79.7,78C178,291.1,213.7,326.1,257.6,326z"
+										fill="white"
+									/>
+									<path
+										d="M387.5,98c13.5,0,24.5,11.5,24.5,25.6c-0.1,14.1-11.2,25.5-24.7,25.4c-13.3-0.1-24.2-11.5-24.2-25.3   C363,109.6,374,98,387.5,98z"
+										fill="white"
+									/>
+								</g>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="header-partone__nav_menu">пн-пт: 09:00-19:00, сб-вс: 10:00-18:00</div>
+				<div class="header-partone__nav-location-privat">
+					<select class="header-partone__nav_menuoption">
+						<option selected>Запорожье</option>
+						<option>Киев</option>
+						<option>Днепр</option>
+					</select>
+					<button class="header-button__one" type="submit">Личный кабинет</button>
+				</div>
+			</div>
+			<div class="header-parttwo">
+				<div class="header-parttwo__logo"></div>
+				<div class="header-parttwo__number">+ 38 050 444 55 55</div>
+				<div class="header-button__two">
+					<button class="button__yellow_medium" type="submit">Заказать звонок</button>
+				</div>
+				<div class="header-parttwo__location">ул.Южноукраинская 5</div>
+			</div>
+			<div class="header-partthree">
+				<nav class="header-partthree__nav">
+					<li class="text__litletitle">О нас</li>
+					<li class="text__litletitle">Цены</li>
+					<li class="text__litletitle">Акции</li>
+					<li class="text__litletitle">Инструкторы</li>
+					<li class="text__litletitle">Отзывы</li>
+					<li class="text__litletitle">Услуги</li>
+					<li class="text__litletitle">Контакты</li>
+					<li class="text__litletitle">Наши филиалы</li>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<article>
+				<section class="section-one__aboutschool_textfoto">
+					<div class="section-one__aboutschool_text">
+						<div class="section-one__textlitletitle">
+							<div class="text__litletitle">
+								<span>Главная</span>·Автошкола онлайн
+							</div>
+						</div>
+						<h1 class="big-title">Автошкола онлайн</h1>
+						<p class="regular-text">
+							Онлайн обучение представляет из себя дистанционное изучение
+							теоретической части. Теперь не стоит откладывать обучение из-за нехватки
+							времени. Изучать материал можно в удобноевремя, с любого устройства и
+							где бы Вы не нахо-дились. Уроки сделаны специалистами в максимально
+							удобной для восприятия форме и доступныкаждому, не зависимо от уровня
+							подготовки. Онлайн курс позволит сэкономить не только время и деньги, но
+							и сократить срок обучения.
+						</p>
+						<div class="section-one__button">
+							<button class="button__yellow_medium">Записаться</button>
+						</div>
+					</div>
+					<div class="section-one__aboutschool_foto">
+						<div class="section-one__buttonfoto_trending">
+							Проверенная эффективность
+						</div>
+						<div class="section-one__buttonfoto_clock">Занятия в удобное время</div>
+						<div class="section-one__buttonfoto_bookopen">Собственная методика</div>
+					</div>
+				</section>
+				<section class="section-second">
+					<h2 class="big-titlesecond">Онлайн обучение выбирают</h2>
+					<div class="section-second__on-line-education">
+						<div class="section-second__on-line-education_column1">
+							<div class="section-second__on-line-education_columnbackground">
+								<svg
+									class="section-second__positionsvg"
+									fill="none"
+									height="24"
+									viewBox="0 0 24 24"
+									width="24"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M19 16C18.4067 16 17.8266 16.1759 17.3333 16.5056C16.8399 16.8352 16.4554 17.3038 16.2284 17.8519C16.0013 18.4001 15.9419 19.0033 16.0576 19.5853C16.1734 20.1672 16.4591 20.7018 16.8787 21.1213C17.2982 21.5409 17.8328 21.8266 18.4147 21.9424C18.9967 22.0581 19.5999 21.9987 20.1481 21.7716C20.6962 21.5446 21.1648 21.1601 21.4944 20.6667C21.8241 20.1734 22 19.5933 22 19C22 18.2044 21.6839 17.4413 21.1213 16.8787C20.5587 16.3161 19.7956 16 19 16V16ZM19 20C18.8022 20 18.6089 19.9414 18.4444 19.8315C18.28 19.7216 18.1518 19.5654 18.0761 19.3827C18.0004 19.2 17.9806 18.9989 18.0192 18.8049C18.0578 18.6109 18.153 18.4327 18.2929 18.2929C18.4327 18.153 18.6109 18.0578 18.8049 18.0192C18.9989 17.9806 19.2 18.0004 19.3827 18.0761C19.5654 18.1518 19.7216 18.28 19.8315 18.4444C19.9414 18.6089 20 18.8022 20 19C20 19.2652 19.8946 19.5196 19.7071 19.7071C19.5196 19.8946 19.2652 20 19 20ZM9 16C8.40666 16 7.82664 16.1759 7.33329 16.5056C6.83994 16.8352 6.45542 17.3038 6.22836 17.8519C6.0013 18.4001 5.94189 19.0033 6.05764 19.5853C6.1734 20.1672 6.45912 20.7018 6.87868 21.1213C7.29824 21.5409 7.83279 21.8266 8.41473 21.9424C8.99667 22.0581 9.59987 21.9987 10.1481 21.7716C10.6962 21.5446 11.1648 21.1601 11.4944 20.6667C11.8241 20.1734 12 19.5933 12 19C12 18.2044 11.6839 17.4413 11.1213 16.8787C10.5587 16.3161 9.79565 16 9 16V16ZM9 20C8.80222 20 8.60888 19.9414 8.44443 19.8315C8.27998 19.7216 8.15181 19.5654 8.07612 19.3827C8.00043 19.2 7.98063 18.9989 8.01921 18.8049C8.0578 18.6109 8.15304 18.4327 8.29289 18.2929C8.43275 18.153 8.61093 18.0578 8.80491 18.0192C8.99889 17.9806 9.19996 18.0004 9.38268 18.0761C9.56541 18.1518 9.72159 18.28 9.83147 18.4444C9.94135 18.6089 10 18.8022 10 19C10 19.2652 9.89464 19.5196 9.70711 19.7071C9.51957 19.8946 9.26522 20 9 20ZM22 8.5C21.9974 6.7769 21.3117 5.12514 20.0933 3.90673C18.8749 2.68831 17.2231 2.00264 15.5 2H15C14.7348 2 14.4804 2.10536 14.2929 2.29289C14.1054 2.48043 14 2.73478 14 3V8H7.52L6.27 4.65C6.19849 4.4586 6.07006 4.2937 5.902 4.17749C5.73395 4.06128 5.53432 3.99934 5.33 4H3C2.73478 4 2.48043 4.10536 2.29289 4.29289C2.10536 4.48043 2 4.73478 2 5C2 5.26522 2.10536 5.51957 2.29289 5.70711C2.48043 5.89464 2.73478 6 3 6H4.64L5.89 9.37L6.4 10.74V10.83C6.86587 12.0671 7.70115 13.1309 8.79245 13.8769C9.88374 14.6229 11.1782 15.015 12.5 15H15.5C16.354 15.0013 17.1998 14.8341 17.989 14.5079C18.7782 14.1817 19.4953 13.703 20.0991 13.0991C20.703 12.4953 21.1817 11.7782 21.5079 10.989C21.8341 10.1998 22.0013 9.35396 22 8.5V8.5ZM18.68 11.68C18.2635 12.0993 17.768 12.4319 17.2222 12.6585C16.6764 12.885 16.091 13.0011 15.5 13H12.5C11.6061 13.0027 10.7319 12.7374 9.99039 12.2383C9.24883 11.7392 8.67395 11.0292 8.34 10.2C8.33566 10.1802 8.33566 10.1598 8.34 10.14L8.26 10H19.74C19.522 10.6347 19.159 11.2099 18.68 11.68V11.68ZM16 8V4C17.0244 4.10684 17.9809 4.5626 18.7091 5.29087C19.4374 6.01913 19.8932 6.97563 20 8H16Z"
+										fill="#4B8EFF"
+									/>
+								</svg>
+							</div>
+							<div class="section-second__on-line-education_columntext">
+								<p class="regular-text">Мамы в декрете</p>
+							</div>
+						</div>
+						<div class="section-second__on-line-education_column2">
+							<div class="section-second__on-line-education_columnbackground">
+								<svg
+									class="section-second__positionsvg"
+									fill="none"
+									height="24"
+									viewBox="0 0 24 24"
+									width="24"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M21.4899 10.1901L20.4899 9.64008L11.4899 4.64008H11.3799C11.3186 4.61416 11.255 4.59407 11.1899 4.58008H10.9999H10.8199C10.7516 4.59408 10.6846 4.61416 10.6199 4.64008H10.5099L1.50988 9.64008C1.35598 9.7273 1.22797 9.85378 1.13891 10.0066C1.04985 10.1595 1.00293 10.3332 1.00293 10.5101C1.00293 10.687 1.04985 10.8607 1.13891 11.0135C1.22797 11.1664 1.35598 11.2929 1.50988 11.3801L3.99988 12.7601V17.5001C3.99988 18.2957 4.31595 19.0588 4.87856 19.6214C5.44117 20.184 6.20423 20.5001 6.99988 20.5001H14.9999C15.7955 20.5001 16.5586 20.184 17.1212 19.6214C17.6838 19.0588 17.9999 18.2957 17.9999 17.5001V12.7601L19.9999 11.6401V14.5001C19.9999 14.7653 20.1052 15.0196 20.2928 15.2072C20.4803 15.3947 20.7347 15.5001 20.9999 15.5001C21.2651 15.5001 21.5194 15.3947 21.707 15.2072C21.8945 15.0196 21.9999 14.7653 21.9999 14.5001V11.0601C21.9996 10.8829 21.9522 10.7089 21.8626 10.5561C21.773 10.4032 21.6443 10.2769 21.4899 10.1901ZM15.9999 17.5001C15.9999 17.7653 15.8945 18.0196 15.707 18.2072C15.5194 18.3947 15.2651 18.5001 14.9999 18.5001H6.99988C6.73466 18.5001 6.48031 18.3947 6.29277 18.2072C6.10524 18.0196 5.99988 17.7653 5.99988 17.5001V13.8701L10.5099 16.3701L10.6599 16.4301H10.7499C10.8329 16.4405 10.9169 16.4405 10.9999 16.4301C11.0829 16.4405 11.1669 16.4405 11.2499 16.4301H11.3399C11.393 16.4189 11.4437 16.3986 11.4899 16.3701L15.9999 13.8701V17.5001ZM10.9999 14.3601L4.05988 10.5001L10.9999 6.64008L17.9399 10.5001L10.9999 14.3601Z"
+										fill="#4B8EFF"
+									/>
+								</svg>
+							</div>
+							<div class="section-second__on-line-education_columntext">
+								<p class="regular-text">Студенты</p>
+							</div>
+						</div>
+						<div class="section-second__on-line-education_column3">
+							<div class="section-second__on-line-education_columnbackground">
+								<svg
+									class="section-second__positionsvg"
+									fill="none"
+									height="24"
+									viewBox="0 0 24 24"
+									width="24"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M18 10C18.7911 10 19.5644 9.76541 20.2222 9.32588C20.88 8.88635 21.3927 8.26164 21.6955 7.53074C21.9982 6.79983 22.0774 5.99556 21.9231 5.21964C21.7688 4.44372 21.3878 3.73098 20.8284 3.17157C20.269 2.61216 19.5563 2.2312 18.7803 2.07686C18.0044 1.92252 17.2001 2.00173 16.4692 2.30448C15.7383 2.60723 15.1136 3.11992 14.6741 3.77772C14.2346 4.43552 14 5.20888 14 6C14 7.06087 14.4214 8.07828 15.1715 8.82843C15.9217 9.57857 16.9391 10 18 10ZM18 4C18.3955 4 18.7822 4.1173 19.1111 4.33706C19.44 4.55683 19.6964 4.86918 19.8477 5.23463C19.9991 5.60009 20.0387 6.00222 19.9615 6.39018C19.8844 6.77814 19.6939 7.13451 19.4142 7.41422C19.1345 7.69392 18.7781 7.8844 18.3901 7.96157C18.0022 8.03874 17.6001 7.99914 17.2346 7.84776C16.8691 7.69639 16.5568 7.44004 16.337 7.11114C16.1173 6.78224 16 6.39556 16 6C16 5.46957 16.2107 4.96086 16.5858 4.58579C16.9608 4.21072 17.4695 4 18 4ZM16.85 12.47C16.7603 12.3253 16.6351 12.2059 16.4864 12.1231C16.3376 12.0402 16.1702 11.9968 16 11.9968C15.8297 11.9968 15.6623 12.0402 15.5135 12.1231C15.3648 12.2059 15.2396 12.3253 15.15 12.47L14.15 14.1L10.86 8.5C10.7714 8.35078 10.6456 8.22716 10.4948 8.1413C10.344 8.05544 10.1735 8.0103 9.99997 8.0103C9.82645 8.0103 9.65592 8.05544 9.50514 8.1413C9.35436 8.22716 9.22851 8.35078 9.13997 8.5L2.13997 20.5C2.05245 20.6516 2.00625 20.8235 2.00598 20.9985C2.00572 21.1735 2.05139 21.3456 2.13845 21.4974C2.22551 21.6492 2.35089 21.7756 2.50208 21.8638C2.65326 21.952 2.82494 21.9989 2.99997 22H21C21.1786 22.0004 21.3541 21.9528 21.5082 21.8624C21.6623 21.7719 21.7894 21.6418 21.8761 21.4856C21.9629 21.3295 22.0062 21.1529 22.0016 20.9743C21.997 20.7956 21.9447 20.6215 21.85 20.47L16.85 12.47ZM10.45 20H4.73997L9.99997 11L12.94 16L11.69 18L10.45 20ZM12.8 20L14.29 17.63L15 16.57L16 14.89L19.2 20H12.8Z"
+										fill="#4F8FFD"
+									/>
+								</svg>
+							</div>
+							<div class="section-second__on-line-education_columntext">
+								<p class="regular-text">Люди проживающие за городом</p>
+							</div>
+						</div>
+						<div class="section-second__on-line-education_column4">
+							<div class="section-second__on-line-education_columnbackground">
+								<svg
+									class="section-second__positionsvg"
+									fill="none"
+									height="24"
+									viewBox="0 0 24 24"
+									width="24"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M12 19C12.1978 19 12.3911 18.9414 12.5556 18.8315C12.72 18.7216 12.8482 18.5654 12.9239 18.3827C12.9996 18.2 13.0194 17.9989 12.9808 17.8049C12.9422 17.6109 12.847 17.4327 12.7071 17.2929C12.5673 17.153 12.3891 17.0578 12.1951 17.0192C12.0011 16.9806 11.8 17.0004 11.6173 17.0761C11.4346 17.1518 11.2784 17.28 11.1685 17.4444C11.0586 17.6089 11 17.8022 11 18C11 18.2652 11.1054 18.5196 11.2929 18.7071C11.4804 18.8946 11.7348 19 12 19ZM17 19C17.1978 19 17.3911 18.9414 17.5556 18.8315C17.72 18.7216 17.8482 18.5654 17.9239 18.3827C17.9996 18.2 18.0194 17.9989 17.9808 17.8049C17.9422 17.6109 17.847 17.4327 17.7071 17.2929C17.5673 17.153 17.3891 17.0578 17.1951 17.0192C17.0011 16.9806 16.8 17.0004 16.6173 17.0761C16.4346 17.1518 16.2784 17.28 16.1685 17.4444C16.0586 17.6089 16 17.8022 16 18C16 18.2652 16.1054 18.5196 16.2929 18.7071C16.4804 18.8946 16.7348 19 17 19ZM17 15C17.1978 15 17.3911 14.9414 17.5556 14.8315C17.72 14.7216 17.8482 14.5654 17.9239 14.3827C17.9996 14.2 18.0194 13.9989 17.9808 13.8049C17.9422 13.6109 17.847 13.4327 17.7071 13.2929C17.5673 13.153 17.3891 13.0578 17.1951 13.0192C17.0011 12.9806 16.8 13.0004 16.6173 13.0761C16.4346 13.1518 16.2784 13.28 16.1685 13.4444C16.0586 13.6089 16 13.8022 16 14C16 14.2652 16.1054 14.5196 16.2929 14.7071C16.4804 14.8946 16.7348 15 17 15ZM12 15C12.1978 15 12.3911 14.9414 12.5556 14.8315C12.72 14.7216 12.8482 14.5654 12.9239 14.3827C12.9996 14.2 13.0194 13.9989 12.9808 13.8049C12.9422 13.6109 12.847 13.4327 12.7071 13.2929C12.5673 13.153 12.3891 13.0578 12.1951 13.0192C12.0011 12.9806 11.8 13.0004 11.6173 13.0761C11.4346 13.1518 11.2784 13.28 11.1685 13.4444C11.0586 13.6089 11 13.8022 11 14C11 14.2652 11.1054 14.5196 11.2929 14.7071C11.4804 14.8946 11.7348 15 12 15ZM19 3H18V2C18 1.73478 17.8946 1.48043 17.7071 1.29289C17.5196 1.10536 17.2652 1 17 1C16.7348 1 16.4804 1.10536 16.2929 1.29289C16.1054 1.48043 16 1.73478 16 2V3H8V2C8 1.73478 7.89464 1.48043 7.70711 1.29289C7.51957 1.10536 7.26522 1 7 1C6.73478 1 6.48043 1.10536 6.29289 1.29289C6.10536 1.48043 6 1.73478 6 2V3H5C4.20435 3 3.44129 3.31607 2.87868 3.87868C2.31607 4.44129 2 5.20435 2 6V20C2 20.7956 2.31607 21.5587 2.87868 22.1213C3.44129 22.6839 4.20435 23 5 23H19C19.7956 23 20.5587 22.6839 21.1213 22.1213C21.6839 21.5587 22 20.7956 22 20V6C22 5.20435 21.6839 4.44129 21.1213 3.87868C20.5587 3.31607 19.7956 3 19 3ZM20 20C20 20.2652 19.8946 20.5196 19.7071 20.7071C19.5196 20.8946 19.2652 21 19 21H5C4.73478 21 4.48043 20.8946 4.29289 20.7071C4.10536 20.5196 4 20.2652 4 20V11H20V20ZM20 9H4V6C4 5.73478 4.10536 5.48043 4.29289 5.29289C4.48043 5.10536 4.73478 5 5 5H6V6C6 6.26522 6.10536 6.51957 6.29289 6.70711C6.48043 6.89464 6.73478 7 7 7C7.26522 7 7.51957 6.89464 7.70711 6.70711C7.89464 6.51957 8 6.26522 8 6V5H16V6C16 6.26522 16.1054 6.51957 16.2929 6.70711C16.4804 6.89464 16.7348 7 17 7C17.2652 7 17.5196 6.89464 17.7071 6.70711C17.8946 6.51957 18 6.26522 18 6V5H19C19.2652 5 19.5196 5.10536 19.7071 5.29289C19.8946 5.48043 20 5.73478 20 6V9ZM7 15C7.19778 15 7.39112 14.9414 7.55557 14.8315C7.72002 14.7216 7.84819 14.5654 7.92388 14.3827C7.99957 14.2 8.01937 13.9989 7.98079 13.8049C7.9422 13.6109 7.84696 13.4327 7.70711 13.2929C7.56725 13.153 7.38907 13.0578 7.19509 13.0192C7.00111 12.9806 6.80004 13.0004 6.61732 13.0761C6.43459 13.1518 6.27841 13.28 6.16853 13.4444C6.05865 13.6089 6 13.8022 6 14C6 14.2652 6.10536 14.5196 6.29289 14.7071C6.48043 14.8946 6.73478 15 7 15ZM7 19C7.19778 19 7.39112 18.9414 7.55557 18.8315C7.72002 18.7216 7.84819 18.5654 7.92388 18.3827C7.99957 18.2 8.01937 17.9989 7.98079 17.8049C7.9422 17.6109 7.84696 17.4327 7.70711 17.2929C7.56725 17.153 7.38907 17.0578 7.19509 17.0192C7.00111 16.9806 6.80004 17.0004 6.61732 17.0761C6.43459 17.1518 6.27841 17.28 6.16853 17.4444C6.05865 17.6089 6 17.8022 6 18C6 18.2652 6.10536 18.5196 6.29289 18.7071C6.48043 18.8946 6.73478 19 7 19Z"
+										fill="#4B8EFF"
+									/>
+								</svg>
+							</div>
+							<div class="section-second__on-line-education_columntext">
+								<p class="regular-text">
+									Люди со сменным и ненормированным графикомработы
+								</p>
+							</div>
+						</div>
+						<div class="section-second__on-line-education_column5">
+							<div class="section-second__on-line-education_columnbackground">
+								<svg
+									class="section-second__positionsvg"
+									fill="none"
+									height="24"
+									viewBox="0 0 24 24"
+									width="24"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M6.62 13.0798C6.4959 13.1247 6.3832 13.1964 6.28989 13.2897C6.19657 13.383 6.12491 13.4957 6.08 13.6198C6.00726 13.8016 5.98945 14.0006 6.02879 14.1924C6.06812 14.3841 6.16287 14.5601 6.30128 14.6985C6.43969 14.837 6.61569 14.9317 6.80744 14.971C6.99919 15.0104 7.19827 14.9926 7.38 14.9198C7.50118 14.8692 7.6128 14.7982 7.71 14.7098C7.79833 14.6126 7.86936 14.501 7.92 14.3798C7.97598 14.2611 8.00338 14.131 8 13.9998C7.99632 13.7351 7.89273 13.4815 7.71 13.2898C7.56938 13.1511 7.3908 13.0571 7.19681 13.0197C7.00282 12.9823 6.80211 13.0032 6.62 13.0798ZM19.76 9.07983L18.4 5.04983C18.1926 4.46306 17.8077 3.95533 17.2989 3.59699C16.7901 3.23865 16.1824 3.04743 15.56 3.04983H8.44C7.81764 3.04743 7.20995 3.23865 6.7011 3.59699C6.19225 3.95533 5.80745 4.46306 5.6 5.04983L4.24 9.10983C3.60033 9.27734 3.03392 9.65149 2.62883 10.1741C2.22374 10.6968 2.00268 11.3386 2 11.9998V15.9998C2.00174 16.6188 2.19488 17.222 2.55294 17.7269C2.911 18.2318 3.41645 18.6135 4 18.8198V19.9998C4 20.265 4.10536 20.5194 4.29289 20.7069C4.48043 20.8945 4.73478 20.9998 5 20.9998C5.26522 20.9998 5.51957 20.8945 5.70711 20.7069C5.89464 20.5194 6 20.265 6 19.9998V18.9998H18V19.9998C18 20.265 18.1054 20.5194 18.2929 20.7069C18.4804 20.8945 18.7348 20.9998 19 20.9998C19.2652 20.9998 19.5196 20.8945 19.7071 20.7069C19.8946 20.5194 20 20.265 20 19.9998V18.8198C20.5835 18.6135 21.089 18.2318 21.4471 17.7269C21.8051 17.222 21.9983 16.6188 22 15.9998V11.9998C21.9973 11.3386 21.7763 10.6968 21.3712 10.1741C20.9661 9.65149 20.3997 9.27734 19.76 9.10983V9.07983ZM7.49 5.67983C7.55709 5.48121 7.6849 5.30869 7.85537 5.18667C8.02584 5.06465 8.23036 4.99929 8.44 4.99983H15.56C15.7781 4.98845 15.9939 5.04875 16.1744 5.17154C16.355 5.29433 16.4904 5.47285 16.56 5.67983L17.61 8.99983H6.39L7.49 5.67983ZM20 15.9998C20 16.265 19.8946 16.5194 19.7071 16.7069C19.5196 16.8945 19.2652 16.9998 19 16.9998H5C4.73478 16.9998 4.48043 16.8945 4.29289 16.7069C4.10536 16.5194 4 16.265 4 15.9998V11.9998C4 11.7346 4.10536 11.4803 4.29289 11.2927C4.48043 11.1052 4.73478 10.9998 5 10.9998H19C19.2652 10.9998 19.5196 11.1052 19.7071 11.2927C19.8946 11.4803 20 11.7346 20 11.9998V15.9998ZM16.62 13.0798C16.4959 13.1247 16.3832 13.1964 16.2899 13.2897C16.1966 13.383 16.1249 13.4957 16.08 13.6198C16.0073 13.8016 15.9895 14.0006 16.0288 14.1924C16.0681 14.3841 16.1629 14.5601 16.3013 14.6985C16.4397 14.837 16.6157 14.9317 16.8074 14.971C16.9992 15.0104 17.1983 14.9926 17.38 14.9198C17.5041 14.8749 17.6168 14.8033 17.7101 14.7099C17.8034 14.6166 17.8751 14.5039 17.92 14.3798C17.976 14.2611 18.0034 14.131 18 13.9998C17.9963 13.7351 17.8927 13.4815 17.71 13.2898C17.5694 13.1511 17.3908 13.0571 17.1968 13.0197C17.0028 12.9823 16.8021 13.0032 16.62 13.0798ZM13 12.9998H11C10.7348 12.9998 10.4804 13.1052 10.2929 13.2927C10.1054 13.4803 10 13.7346 10 13.9998C10 14.265 10.1054 14.5194 10.2929 14.7069C10.4804 14.8945 10.7348 14.9998 11 14.9998H13C13.2652 14.9998 13.5196 14.8945 13.7071 14.7069C13.8946 14.5194 14 14.265 14 13.9998C14 13.7346 13.8946 13.4803 13.7071 13.2927C13.5196 13.1052 13.2652 12.9998 13 12.9998Z"
+										fill="#4F8FFD"
+									/>
+								</svg>
+							</div>
+							<div class="section-second__on-line-education_columntext">
+								<p class="regular-text">
+									Для замены иностран- ного водительского удостоверения
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="section-second__advantage-on-line-education">
+						<h2 class="big-titlesecond">Преимущества дистанционного обучения</h2>
+						<ul class="section-second__advantages-list">
+							<div class="section-second__advantages-list_text1">
+								<li class="section-second__advantages-list_text">
+									Низкая стоимость
+								</li>
+							</div>
+							<div class="section-second__advantages-list_text2">
+								<li class="section-second__advantages-list_text">
+									Свободный график
+								</li>
+							</div>
+							<div class="section-second__advantages-list_text3">
+								<li class="section-second__advantages-list_text">
+									Возможность повторного просмотра лекций
+								</li>
+							</div>
+							<div class="section-second__advantages-list_text4">
+								<li class="section-second__advantages-list_text">
+									Доступ к личному кабинету 24/7
+								</li>
+							</div>
+							<div class="section-second__advantages-list_text5">
+								<li class="section-second__advantages-list_text">
+									Сокращенный срок обучения
+								</li>
+							</div>
+							<div class="section-second__advantages-list_text6">
+								<li class="section-second__advantages-list_text">
+									Использование любого устройства (телефон, планшет, компьютер)
+								</li>
+							</div>
+						</ul>
+					</div>
+				</section>
+				<section class="section-third__get-discount">
+					<div class="section-third__get-discount_advertising">
+						<div class="section-third__get-discount_description">
+							<button class="smallbutton-discount1000">Скидка 1000 грн</button>
+							<div class="section-third__get-discount_description-text">
+								<h2 class="big-titlesecond">
+									Запишись прямо сейчас и получи скидку на обучение
+								</h2>
+							</div>
+						</div>
+						<div class="section-third__get-discount_carfoto"></div>
+					</div>
+					<div class="section-third__get-discount_input-data">
+						<input class="regular-text" placeholder="Ваше имя" type="text" />
+						<input class="regular-text" placeholder="Ваш номер телефона" type="text" />
+						<button class="button__blue_medium">Записаться</button>
+					</div>
+				</section>
+
+				<section class="section-fourth__write-down-to-education">
+					<div class="section-fourth__title">
+						<h2 class="big-titlesecond">
+							Чтобы начать обучение, нет необходимости ждать набора группы, занятия
+							начнутся в день заключения договора!
+						</h2>
+					</div>
+					<div class="section-fourth__titletwo">
+						<h3 class="regular-text">
+							Записаться и начать обучение можно не выходя из дома:
+						</h3>
+					</div>
+					<div class="section-fourth__steps-to-register">
+						<div class="section-fourth__step-one">
+							<div class="section-fourth__step-one_barcode"></div>
+							<div class="section-fourth__install-applications">
+								<p class="regular-text">
+									Установить наше приложение «Автошкола РЕАЛ»
+								</p>
+							</div>
+							<button class="section-fourth__step-one_appstore"></button>
+							<button class="section-fourth__step-one_googleplay"></button>
+						</div>
+						<div class="section-fourth__step-two">
+							<div class="section-fourth__step-two_aplication-form"></div>
+							<div class="section-fourth__step-two_notice">
+								<p class="regular-text">
+									Заполнить паспортные данные, выбрать филиал, пакет обучения и
+									место встречи с инструктором.
+								</p>
+							</div>
+						</div>
+						<div class="section-fourth__step-three">
+							<div class="section-fourth__step-three_first-payment">
+								<div class="section-fourth__step-three_costs">4 900 грн</div>
+							</div>
+							<div class="section-fourth__step-three_notice">
+								<p class="regular-text">Внести первоначальный взнос 4 900 грн.</p>
+							</div>
+						</div>
+					</div>
+					<div class="section-fourth__vector"></div>
+					<div class="section-fourth__school-enrollment">
+						<div>
+							<ul>
+								<div class="section-fourth__school-enrollment-list">
+									<li class="regular-text">
+										Далее с Вами свяжется наш менеджер для уточнения деталей.
+									</li>
+								</div>
+								<div class="section-fourth__school-enrollment-list">
+									<li class="regular-text">
+										После оплаты, в личном кабинете, в разделе теория, появится
+										весь теоретический материал, представ-ленный в виде
+										видео-лекций, для каждой отдельной темы разработан подробный
+										видео-урок, после про-смотра урока, для закрепления
+										полученных знаний, необходимо пройти зачет в виде теста,
+										если все пройдено без ошибок, открывается следующая тема,
+										при необходимостилекцию можно пересмотреть неограниченное
+										количество раз, в случае возникнове-ния вопросов, обратиться
+										к консультанту.
+									</li>
+								</div>
+							</ul>
+						</div>
+						<div>
+							<ul>
+								<div class="section-fourth__school-enrollment-list">
+									<li class="regular-text">
+										Параллельно с теорией проходят уроки вождения. За Вами
+										закрепляется опытный инструктор, запись на вождение
+										осуществляется через личный кабинет, с возможностью выбора
+										удобного дня и времени, при необходимости, запись можно
+										отменить или перенести на другой день или время.
+									</li>
+								</div>
+								<div class="section-fourth__school-enrollment-list">
+									<li class="regular-text">Срок обучения 2 месяца.</li>
+								</div>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section class="section-fifth">
+					<h2 class="big-titlesecond">Этапы прохождения обучения</h2>
+					<div class="section-fifth__stages-of-learning">
+						<div class="section-fifth__stages-of-learning_column1">
+							<div class="section-fifth__stages-of-learning_number">
+								<div class="section-fifth__number">1</div>
+							</div>
+							<div class="section-fifth__stages-of-learning_columntext">
+								<p class="regular-text">Изучение теоретической части</p>
+							</div>
+						</div>
+						<div class="section-fifth__stages-of-learning_column2">
+							<div class="section-fifth__stages-of-learning_number">
+								<div class="section-fifth__number">2</div>
+							</div>
+							<div class="section-fifth__stages-of-learning_columntext">
+								<p class="regular-text">Вождение с инструктором</p>
+							</div>
+						</div>
+						<div class="section-fifth__stages-of-learning_column3">
+							<div class="section-fifth__stages-of-learning_number">
+								<div class="section-fifth__number">3</div>
+							</div>
+							<div class="section-fifth__stages-of-learning_columntext">
+								<p class="regular-text">Внутренний экзамен в автошколе</p>
+							</div>
+						</div>
+						<div class="section-fifth__stages-of-learning_column4">
+							<div class="section-fifth__stages-of-learning_number">
+								<div class="section-fifth__number">4</div>
+							</div>
+							<div class="section-fifth__stages-of-learning_columntext">
+								<p class="regular-text">Экзамен в МВД в сопровождении автошколы</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="section-six">
+					<div class="section-six__cost-of-education">
+						<div class="section-six__cost-of-education_title">
+							<h2 class="big-titlesecond">Стоимость обучения</h2>
+						</div>
+						<select class="section-six__cost-of-education_location">
+							<option selected>Запорожье</option>
+							<option>Киев</option>
+							<option>Днепр</option>
+						</select>
+						<p class="regular-text">
+							Стоимость онлайн обучения значительно ниже очного курса, т.к в него не
+							закладывается аренда учебного класса и оплата услуг препода- вателя, что
+							позволяет Вам сэкономить денежные средства.
+						</p>
+					</div>
+					<div class="section-six__cost-of-education-online">
+						<div class="section-six__cost-of-education-online_name">
+							<h2 class="regular-textbold">Онлайн</h2>
+						</div>
+						<div class="section-six__cost-of-education-price-reduced">
+							<h3 class="regularlitle-textbold">38 000 грн</h3>
+						</div>
+						<div class="section-six__cost-of-education-new-price">
+							<h2 class="big-title">29 000 грн</h2>
+						</div>
+						<div class="section-six__cost-of-education-online_promotion">
+							акция «Счастливые часы»
+						</div>
+						<div class="section-six__cost-of-education-online_vector"></div>
+						<div class="section-six__cost-of-education-online_firstpay">
+							<p class="regularlitle-texttransparent">
+								5 000 грн первоначальный взнос
+							</p>
+						</div>
+						<div class="section-six__cost-of-education-online_description">
+							<ul class="section-six__cost-of-education-online_list">
+								<li>Теория онлайн в мобильном приложении</li>
+								<li>Начало занятий в день обращения</li>
+								<li>Стандартный курс вождения в удобное для Вас время</li>
+								<li>Бензин и учебная литература</li>
+								<li>Оформление документов для МВД</li>
+								<li>Изучение экзаменационных маршрутов МВД</li>
+								<li>Сопровождение до получения прав</li>
+								<li>Срок обучения 2 месяца</li>
+							</ul>
+						</div>
+						<div class="section-six__cost-of-education_button">
+							<button class="button__yellow_medium">Записаться</button>
+						</div>
+					</div>
+					<div class="section-six__cost-of-education-onlineplus">
+						<div class="section-six__cost-of-education-online_name">
+							<h2 class="regular-textbold">Онлайн</h2>
+						</div>
+						<div class="section-six__cost-of-education-price-reduced">
+							<h3 class="regularlitle-textbold">38 000 грн</h3>
+						</div>
+						<div class="section-six__cost-of-education-new-price">
+							<h2 class="big-title">32 000 грн</h2>
+						</div>
+						<div class="section-six__cost-of-education-online_promotion-yellow">
+							акция «Крути барабан»
+						</div>
+						<div class="section-six__cost-of-education-online_vector"></div>
+						<div class="section-six__cost-of-education-online_firstpay">
+							<p class="regularlitle-texttransparent">
+								5 000 грн первоначальный взнос
+							</p>
+						</div>
+						<div class="section-six__cost-of-education-online_description">
+							<ul class="section-six__cost-of-education-online_list">
+								<li>Теория онлайн в мобильном приложении</li>
+								<li>Начало занятий в день обращения</li>
+								<li>Расширенный курс вождения в удобное для Вас время</li>
+								<li>Бензин и учебная литература</li>
+								<li>Оформление документов для МВД</li>
+								<li>Изучение экзаменационных маршрутов МВД</li>
+								<li>Сопровождение до получения прав</li>
+								<li>Срок обучения 2 месяца</li>
+							</ul>
+						</div>
+						<div class="section-six__cost-of-education_button">
+							<button class="button__yellow_medium">Записаться</button>
+						</div>
+					</div>
+				</section>
+				<section class="section-seven">
+					<h2 class="big-titlesecond">Инструкторы</h2>
+					<select class="section-seven__instructors_location">
+						<option selected>Запорожье</option>
+						<option>Киев</option>
+						<option>Днепр</option>
+					</select>
+					<div class="section-seven__instructors">
+						<div class="section-seven__instructors-description">
+							<p class="regular-text">
+								Эффективность обучения во многом зависит от инструктора, поэтому для
+								нашей автошколы «Реал» мы отобрали квалифицированных водите-лей,
+								имеющих не только большой стаж вождения, но и опыт в преподавании.
+								Они доступно излагают материал, всегда готовы прийти на помощь, а
+								также легко находят общий язык с аудиторией.
+							</p>
+							<p class="regular-text">
+								Для того чтобы вам проще было выбрать инструктора для себя, на нашем
+								сайте реализована рейтинговая система. Вы сможете ознакомиться с
+								портфолио конкретного специалиста, его оценкой и отзывами от
+								предыдущих учеников.
+							</p>
+							<div class="section-seven__instructors_choose-instructor">
+								<button class="button__blue_medium">Все инструкторы</button>
+								<button class="arrow-left"></button>
+								<button class="arrow-right"></button>
+							</div>
+						</div>
+						<div class="section-seven__instructor-one">
+							<div class="section-seven__foto-instructor-one"></div>
+							<div class="section-seven__instructor-name">
+								<p class="regular-textbold">Овчинников Иван Алексеевич</p>
+							</div>
+							<div class="section-seven__instructor-experience">
+								<p class="regular-text">водительский стаж 10 лет</p>
+							</div>
+							<div class="section-seven__instructor-rating">
+								<p class="regular-text">
+									Рейтинг <br />
+									инструктора
+								</p>
+								<div class="section-seven__instructor-ratingscore">4,9</div>
+							</div>
+						</div>
+						<div class="section-seven__instructor-second">
+							<div class="section-seven__foto-instructor-second"></div>
+							<div class="section-seven__instructor-name">
+								<p class="regular-textbold">Пермяков Андрей Леонидович</p>
+							</div>
+							<div class="section-seven__instructor-experience">
+								<p class="regular-text">водительский стаж 25 лет</p>
+							</div>
+							<div class="section-seven__instructor-rating">
+								<p class="regular-text">
+									Рейтинг <br />
+									инструктора
+								</p>
+								<div class="section-seven__instructor-ratingscore">5,0</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="section-eighth">
+					<h2 class="big-titlesecond">Отзывы наших выпускников</h2>
+					<div class="section-eighth__reviews">
+						<div class="section-eighth__reviews-description">
+							<div class="section-eighth__reviews_sasha">
+								<p class="regular-textbold">
+									Слепова<br />
+									Александра
+								</p>
+							</div>
+							<div class="section-eighth__description_sasha">
+								<p class="regular-text">
+									Хочу сказать спасибо автошколе Реал за такую возможность и
+									готовность идти навстречу. Отдельно спасибо хотела бы сказать
+									Маслову Валерию Михайловичу за знания, понятное объяснение и
+									желание помочь ученику в трудностях, а также за профессионализм
+									и подход к каждому
+								</p>
+							</div>
+							<div class="section-eighth__instructors-name">
+								<p class="regularlitle-texttransparent">
+									Инструктор:<br />
+									Семенов Сергей Викторович
+								</p>
+							</div>
+						</div>
+						<div class="section-eighth__reviews-video">
+							<iframe
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen
+								frameborder="0"
+								src="https://www.youtube.com/embed/bOcvKlucM6Q"
+								title="YouTube video player"
+							></iframe>
+							<!--<div class="section-eighth__user-tanya">
+<p class="regular-textboldwhite">
+Кудрявцева<br />
+Татьяна
+</p>
+</div>
+<div class="section-eighth__text-play">
+<p class="regular-textboldwhite">
+&nbsp;&nbsp;&nbsp;Смотреть видеоотзыв
+</p>
+</div>
+<button class="section-eighth__push-to-play" type="submit"></button>-->
+						</div>
+						<div class="section-eighth__reviews-description">
+							<div class="section-eighth__reviews_sasha">
+								<p class="regular-textbold">
+									Слепова<br />
+									Александра
+								</p>
+							</div>
+							<div class="section-eighth__description_sasha">
+								<p class="regular-text">
+									Хочу сказать спасибо автошколе Реал за такую возможность и
+									готовность идти навстречу. Отдельно спасибо хотела бы сказать
+									Маслову Валерию Михайловичу за знания, понятное объяснение и
+									желание помочь ученику в трудностях, а также за профессионализм
+									и подход к каждому
+								</p>
+							</div>
+							<div class="section-eighth__instructors-name">
+								<p class="regularlitle-texttransparent">
+									Инструктор:<br />
+									Семенов Сергей Викторович
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="section-eighth__all-reviews">
+						<button class="button__blue_medium">Все отзывы</button>
+						<button class="arrow-left"></button>
+						<button class="arrow-right"></button>
+					</div>
+				</section>
+				<section class="section-nine" id="section-nine-write-now">
+					<div class="section-nine__blue-box">
+						<div class="section-nine__write-now">
+							<h2 class="big-titlesecondwhite">
+								Запишись на обучение<br />
+								прямо сейчас!
+							</h2>
+						</div>
+						<div class="section-nine__write-now_display">
+							<div class="regular-textwhite">
+								<p>Ваше имя</p>
+							</div>
+							<div class="regular-textwhite"><p>Ваш номер телефона</p></div>
+							<button class="button__white_medium">Записаться</button>
+						</div>
+					</div>
+					<div class="section-nine__questions">
+						<div>
+							<h2 class="big-titlesecond">Часто задаваемые вопросы</h2>
+						</div>
+						<div>
+							<ul class="section-nine__questionslist">
+								<li class="tab">
+									<input checked="checked" id="acor1" name="acor" type="radio" />
+									<label class="regular-textbold tab-label" for="acor1"
+										>С какого возраста можно начать обучение?</label
+									>
+									<p class="regular-text tab-content">
+										Начать обучение можно с 16 лет, сдать экзамены в 17 лет, в
+										18 лет получить права.
+									</p>
+								</li>
+								<li class="tab">
+									<input id="acor2" name="acor" type="radio" />
+									<label class="regular-textbold tab-label" for="acor2"
+										>Если в ходе изучения теории возник вопрос?</label
+									>
+									<p class="regular-text tab-content">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+										adipisci aspernatur autem consectetur hic, nihil nisi vitae!
+									</p>
+								</li>
+								<li class="tab">
+									<input id="acor3" name="acor" type="radio" />
+									<label class="regular-textbold tab-label" for="acor3"
+										>Можно ли приостановить обучение?</label
+									>
+									<p class="regular-text tab-content">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+										adipisci aspernatur autem consectetur hic, nihil nisi vitae!
+									</p>
+								</li>
+								<li class="tab">
+									<input id="acor4" name="acor" type="radio" />
+									<label class="regular-textbold tab-label" for="acor4"
+										>Какова эффективность онлайн курса?</label
+									>
+									<p class="regular-text tab-content">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+										adipisci aspernatur autem consectetur hic, nihil nisi vitae!
+									</p>
+								</li>
+								<li class="tab">
+									<input id="acor5" name="acor" type="radio" />
+									<label class="regular-textbold tab-label" for="acor5"
+										>Какие документы необходимы?</label
+									>
+									<p class="regular-text tab-content">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+										adipisci aspernatur autem consectetur hic, nihil nisi vitae!
+									</p>
+								</li>
+								<li class="tab">
+									<input id="acor6" name="acor" type="radio" />
+									<label class="regular-textbold tab-label" for="acor6"
+										>Можно ли сократить или увеличить срок обучения?</label
+									>
+									<p class="regular-text tab-content">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+										adipisci aspernatur autem consectetur hic, nihil nisi vitae!
+									</p>
+								</li>
+								<li class="tab">
+									<input id="acor7" name="acor" type="radio" />
+									<label class="regular-textbold tab-label" for="acor7"
+										>Когда начинается вождение?</label
+									>
+									<p class="regular-text tab-content">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+										adipisci aspernatur autem consectetur hic, nihil nisi vitae!
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section class="section-ten">
+					<div class="section-ten__location">
+						<h2 class="big-titlesecond">География присутствия</h2>
+					</div>
+					<div class="section-ten__location-map">
+						<div class="section-ten__location-map_point"></div>
+						<div class="section-ten__location-map-street">
+							<h3 class="section-ten-street-title">Запорожье</h3>
+							<ul class="section-ten-street-list">
+								<div class="section-ten__one">
+									<p class="regular-textbold">Центральная 75</p>
+								</div>
+								<li class="regular-text">Вокзальная 4</li>
+								<li class="regular-text">Бирюкова 4а</li>
+							</ul>
+						</div>
+						<div class="section-ten__nearest-school">
+							<p class="regular-text">Показать близжайшую автошколу</p>
+						</div>
+						<div class="section-ten__zoom-in"></div>
+					</div>
+
+					<div class="section-ten__write-to-learninig">
+						<a href="#section-nine-write-now">
+							<button class="button__yellow_medium">Записаться на обучение</button>
+						</a>
+					</div>
+				</section>
+			</article>
+		</main>
+		<footer>
+			<div class="footer-bg">
+				<div class="footer-bg__contacts">
+					<div class="footer-bg__column-one">
+						<div class="footer-bg__logo-and-text">
+							<div class="footer-bg__column-one__logo"></div>
+							<div class="footer-bg__column-one__text-logo">
+								<h2 class="big-title-white">РЕАЛ</h2>
+								<p class="regular-textwhite">автошкола</p>
+							</div>
+						</div>
+						<h3 class="big-titlesecondwhite">+ 38 050 444 55 55</h3>
+						<p class="regular-textwhite">
+							60059, г.Запорожье,ул.Южноукраинская 5 пн-пт: 09:00-19:00, сб-вс:
+							10:00-18:00
+						</p>
+					</div>
+					<div class="footer-bg__column-two">
+						<nav class="column-two-three-four">
+							<li>
+								<h6 class="regular-textwhite">Категория В (МКП)</h6>
+							</li>
+							<li>
+								<h6 class="regular-textwhite">Категория В (АКП)</h6>
+							</li>
+							<li>
+								<h6 class="regular-textwhite">Категория А,А1</h6>
+							</li>
+							<li>
+								<h6 class="regular-textwhite">Категория Аl</h6>
+							</li>
+							<li>
+								<h6 class="regular-textwhite">Категория М</h6>
+							</li>
+						</nav>
+					</div>
+					<div class="footer-bg__column-three">
+						<nav class="column-two-three-four">
+							<li>
+								<h6 class="regular-textwhite">Акции</h6>
+							</li>
+							<li>
+								<h6 class="regular-textwhite">О нас</h6>
+							</li>
+							<li>
+								<h6 class="regular-textwhite">Галерея</h6>
+							</li>
+							<li>
+								<h6 class="regular-textwhite">Контакты</h6>
+							</li>
+						</nav>
+					</div>
+					<div class="footer-bg__column-four">
+						<nav class="column-two-three-four">
+							<li>
+								<h6 class="regular-textwhite">Расписание</h6>
+							</li>
+							<li>
+								<h6 class="regular-textwhite">Площадка</h6>
+							</li>
+							<li>
+								<h6 class="regular-textwhite">Блог</h6>
+							</li>
+							<li>
+								<h6 class="regular-textwhite">Филиалы</h6>
+							</li>
+						</nav>
+					</div>
+					<div class="footer-bg__column-five">
+						<div class="footer-bg__column-social">
+							<div>
+								<a href="#" rel="nofollow noopener" target="_blank">
+									<svg aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+										<path
+											d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"
+											fill="white"
+										></path>
+									</svg>
+								</a>
+							</div>
+							<div>
+								<a href="#" rel="nofollow noopener" target="_blank">
+									<svg
+										enable-background="new 0 0 512 512"
+										id="Layer_1"
+										version="1.1"
+										viewBox="0 0 512 512"
+										xml:space="preserve"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<g>
+											<path
+												d="M308.3,508.5c-2.5,0.1-4.1,0.3-5.7,0.3c-34.2,0-68.3-0.1-102.5,0.1c-4.8,0-6.1-1.3-6.1-6.1c0.1-79.6,0.1-159.3,0.1-238.9   c0-2.1,0-4.2,0-6.9c-18.6,0-36.7,0-55.1,0c0-28.4,0-56.3,0-85c1.9,0,3.7,0,5.4,0c15,0,30-0.1,45,0.1c3.8,0,4.8-1.1,4.8-4.8   c-0.2-22.3-0.2-44.7,0-67c0.1-15.6,2.6-30.8,9.8-44.9c10.3-19.9,26.6-32.8,47.2-40.8c16.8-6.6,34.5-9,52.3-9.3   c29-0.4,58-0.2,87-0.3c2.7,0,4.9-0.1,4.9,3.7c-0.1,27.5-0.1,55-0.1,82.5c0,0.3-0.1,0.6-0.5,1.9c-1.7,0-3.6,0-5.5,0   c-18,0-36-0.1-54,0c-10.4,0-18.8,4.2-24.1,13.3c-1.6,2.7-2.6,6.2-2.6,9.4c-0.3,17,0,34-0.2,51c0,4,1.2,5.1,5.1,5.1   c25-0.2,50-0.1,75-0.1c2,0,3.9,0,7.3,0c-3.5,28.6-6.9,56.6-10.4,84.9c-26,0-51.3,0-77.1,0C308.3,340.8,308.3,424.4,308.3,508.5z"
+												fill="white"
+											/>
+										</g>
+									</svg>
+								</a>
+							</div>
+							<div>
+								<a href="#" rel="nofollow noopener" target="_blank">
+									<svg
+										enable-background="new 0 0 512 512"
+										id="Layer_1"
+										version="1.1"
+										viewBox="0 0 512 512"
+										xml:space="preserve"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<g>
+											<path
+												d="M505,257c0,34.8-0.7,69.7,0.2,104.5c1.5,61.6-37.2,109.2-86.5,130.4c-19.8,8.5-40.6,13-62.1,13c-67.3,0.1-134.7,1-202-0.3   c-50.7-1-92.4-22.2-122.3-64c-15.7-22-23.2-47-23.2-74.1c0-71.7,0-143.3,0-215c0-58.5,28.5-99.4,79.1-126C110.2,14,134.1,9.1,159,9   c65.3,0,130.7-0.4,196,0.2c50.7,0.4,93,19.8,124.2,60.6c17.4,22.8,25.8,49,25.8,77.8C505,184,505,220.5,505,257z M46,257   c0,36.7,0,73.3,0,110c0,16.4,3.8,31.8,12.3,45.7c22.3,36.5,56,54.3,97.8,55c67.1,1,134.3,0.4,201.5,0.2c16.5,0,32.5-3.4,47.4-10.5   c40.6-19.4,63.3-50.3,63.1-96.7c-0.4-71-0.1-142-0.1-213c0-20.1-5.7-38.5-17.6-54.7c-23-31.1-54.8-46.4-92.8-46.8   c-67-0.8-134-0.3-201-0.2c-14.3,0-28.1,2.9-41.5,7.9c-36.8,13.7-71,48.4-69.4,99.5C46.9,188,46,222.5,46,257z"
+												fill="white"
+											/>
+											<path
+												d="M257.6,363c-64.5,0-116.5-51.4-116.6-115.4c-0.1-63,52.3-114.6,116.4-114.6c64.3-0.1,116.5,51.4,116.6,114.9   C374,311.3,321.9,362.9,257.6,363z M257.6,326c43.9,0,79.5-35.1,79.4-78.3c-0.1-42.8-35.7-77.8-79.4-77.8   c-43.9,0-79.7,34.9-79.7,78C178,291.1,213.7,326.1,257.6,326z"
+												fill="white"
+											/>
+											<path
+												d="M387.5,98c13.5,0,24.5,11.5,24.5,25.6c-0.1,14.1-11.2,25.5-24.7,25.4c-13.3-0.1-24.2-11.5-24.2-25.3   C363,109.6,374,98,387.5,98z"
+												fill="white"
+											/>
+										</g>
+									</svg>
+								</a>
+							</div>
+						</div>
+
+						<button class="footer-bg__column-five-bg appstore-footer"></button>
+						<button class="footer-bg__column-five-bg googlestore-footer"></button>
+						<button class="footer-bg__column-five-bg google-footer"></button>
+					</div>
+				</div>
+				<div class="footer-all-id-copyright">
+					<div class="footer-under-line"></div>
+					<div class="footer-id-copyright">
+						<p>ИНН 38238292387479</p>
+						<p>2013-2022 Автошкола "Реал"</p>
+					</div>
+					<div class="footer-id-copyright">
+						<p>КПП 578899302084/ЕДРПУ 34737929029</p>
+						<p>
+							Все права защищены. Копирование материала разрешено только с согласия
+							правообладателя
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

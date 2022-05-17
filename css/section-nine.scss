@@ -1,0 +1,89 @@
+.section-nine__blue-box {
+	width: 100%;
+	height: 301px;
+	background: #4f8ffd url('../img/sectionnine/group.png') right no-repeat;
+	border-radius: 30px;
+	margin-bottom: 154px;
+}
+
+.section-nine__write-now {
+	padding-top: 57px;
+	margin-left: 60px;
+}
+
+.section-nine__write-now_display {
+	display: flex;
+	justify-content: space-between;
+	padding: 64px 71px 60px 58px;
+	margin-bottom: 154px;
+}
+
+.section-nine__questions {
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 117px;
+}
+
+.section-nine__questionslist {
+	max-width: 500px;
+}
+
+.section-nine__questionslist li {
+	margin-bottom: 24px;
+}
+
+.tab-label {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+
+	&::after {
+		content: '';
+		display: block;
+		width: 7px;
+		height: 6px;
+		background: url(../img/sectionnine/polygon5.png);
+		margin-left: 16px;
+		transition: all 1s;
+	}
+}
+
+.tab-content {
+	overflow: hidden;
+	max-height: 0;
+}
+
+input {
+	position: absolute;
+	opacity: 0;
+	z-index: -1;
+}
+
+@keyframes content {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+// :checked
+input:checked {
+	+ .tab-label {
+		&::after {
+			background: url(../img/sectionnine/polygon4.png);
+		}
+	}
+
+	~ .tab-content {
+		max-height: 100vh;
+		margin-bottom: 36px;
+		overflow: hidden;
+		opacity: 1;
+		animation: content 2s linear 1 0s forwards;
+	}
+}

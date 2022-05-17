@@ -1,0 +1,70 @@
+.section-eighth__reviews {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 107px;
+  margin-bottom: 164px;
+}
+
+.section-eighth__reviews-description {
+  width: 270px;
+}
+
+.section-eighth__reviews_sasha {
+  height: 45px;
+  margin-bottom: 59px;
+  padding-left: 60px;
+  background: url(../img/sectioneighth/sasha.png) 0 0 no-repeat;
+}
+
+.section-eighth__description_sasha {
+  margin-bottom: 59px;
+}
+
+.section-eighth__instructors-name {
+  height: 45px;
+  background: url(../img/sectioneighth/vector29.svg) 180px 17px no-repeat, url(../img/sectioneighth/ellipse86.png) 175px 12px no-repeat;
+}
+
+.section-eighth__reviews-video {
+  width: 770px;
+  height: 581px;
+  /*background: url(../img/sectioneighth/woman.png) 0 0 no-repeat;*/
+}
+
+.section-eighth__reviews-video iframe {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/*.section-eighth__user-tanya {
+	height: 45px;
+	margin-top: 54px;
+	margin-left: 28px;
+	padding-left: 60px;
+	background: url(../img/sectioneighth/tanya.png) left no-repeat;
+}
+
+.section-eighth__text-play {
+	margin-top: 380px;
+	margin-left: 115px;
+	width: 155px;
+}
+
+.section-eighth__push-to-play {
+	position: relative;
+	top: 26px;
+	left: 123px;
+	width: 72px;
+	height: 72px;
+	background: #ffffff url('../img/sectioneighth/polygon.png') 32px 30px no-repeat;
+	border-radius: 50%;
+	box-shadow: 0 4px 72px rgba(0, 0, 0, 0.13);
+}
+*/
+.section-eighth__all-reviews {
+  display: flex;
+  margin-top: 66px;
+}
+
+/*# sourceMappingURL=section-eighth.css.map */

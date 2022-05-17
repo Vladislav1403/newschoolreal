@@ -1,0 +1,88 @@
+.section-ten__location {
+  margin-bottom: 40px;
+}
+
+.section-ten__location-map {
+  width: 1440px;
+  height: 559px;
+  background: url(../img/sectionten/map.png) 0 0/contain no-repeat;
+  margin-bottom: 104px;
+}
+
+.section-ten__location-map_point {
+  position: relative;
+  left: 675px;
+  top: 240px;
+  width: 125px;
+  height: 125px;
+  background: url(../img/sectionten/ellipse75.png) 49px 45px no-repeat, rgba(79, 143, 253, 0.17);
+  border-radius: 50%;
+}
+
+.section-ten__location-map-street {
+  position: relative;
+  left: 1054px;
+  top: 23px;
+  width: 335px;
+  height: 392px;
+  background: url(../img/sectionten/ellipse69.png) 55px 115px no-repeat, url(../img/sectionten/ellipse68.png) 42px 103px no-repeat, #ffffff url(../img/sectionten/frame.png) 50px 300px no-repeat;
+  border-radius: 32px;
+}
+
+.section-ten-street-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 21px;
+  color: #2c2c2c;
+  padding-top: 44px;
+  padding-left: 45px;
+  background: url(../img/sectionten/polygon11.png) 170px 50px no-repeat;
+}
+
+.section-ten-street-list {
+  margin-top: 47px;
+  padding-left: 60px;
+}
+
+.section-ten-street-list p {
+  padding-bottom: 19px;
+  padding-left: 28px;
+}
+
+.section-ten-street-list li {
+  padding-bottom: 19px;
+  background: url(../img/sectionten/ellipse76.png) -3px 6px no-repeat;
+  padding-left: 28px;
+}
+
+.section-ten__nearest-school {
+  position: relative;
+  left: 37px;
+  top: -60px;
+  width: 446px;
+  height: 53px;
+  background: url(../img/sectionten/vector.svg) 411px 19px no-repeat, #ffffff url(../img/sectionten/rectangle9.png) 400px 8px no-repeat;
+  box-shadow: 0 4px 17px -5px rgba(72, 132, 250, 0.1);
+  border-radius: 13px;
+  padding-left: 22px;
+  padding-bottom: 15px;
+  padding-top: 14px;
+}
+
+.section-ten__zoom-in {
+  position: relative;
+  left: 495px;
+  top: -113px;
+  width: 111px;
+  height: 53px;
+  background: url(../img/sectionten/minus.png) 25px 21px no-repeat, #ffffff url(../img/sectionten/plus.png) 75px 21px no-repeat;
+  box-shadow: 0 4px 17px -5px rgba(72, 132, 250, 0.1);
+  border-radius: 13px;
+}
+
+.section-ten__write-to-learninig {
+  margin-left: 620px;
+  margin-bottom: 117px;
+}
+
+/*# sourceMappingURL=section-ten.css.map */
